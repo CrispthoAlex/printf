@@ -28,3 +28,49 @@ static int (*verify_type(const char *format))(va_list)
 	}
 	return (p[i].f);
 }
+
+/**
+ * _printf - prints a variety of outputs in specific formats
+ * @format: input argument types for output format
+ * Description:  produces output according to a format using _putchar.
+ * Return: number of characters printed
+ */
+int _printf(const char *format, ...)
+{
+	/* i = iterator of format string */
+	/* j = counter of chars printed */
+	unsigned int i = 0, j = 0;
+	va_list valist;
+	int (*f)(va_list);
+
+	if (format == NULL)
+		return (255);
+	va_start(valist, format);
+	while (format[i])
+	{
+		for (; format[i] != '%' && format[i]; i++)
+		{
+			_putchar(format[i]);
+			j++;
+		}
+		if (!format[i])
+			return (j);
+		f = verify_type(&format[i + 1]);
+		if (f != NULL)
+		{
+			j += f(valist);
+			i += 2;
+			continue;
+		}
+		if (!format[i + 1])
+			return (255);
+		_putchar(format[i]);
+		j++;
+		if (format[i + 1] == '%')
+			i += 2;
+		else
+			i++;
+	}
+	va_end(valist);
+	return (j);
+}
