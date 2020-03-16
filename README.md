@@ -72,7 +72,7 @@ Header file. Include all prototypes functions used
 
 On success returns an integer number of symbols printed not counting \\0 for the string.
 
-On failure returns error number (255)
+On failure returns error number (-1)
 
 ------------
 ## Team Project

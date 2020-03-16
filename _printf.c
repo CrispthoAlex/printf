@@ -33,7 +33,7 @@ static int (*verify_type(const char *format))(va_list)
  * _printf - prints a variety of outputs in specific formats
  * @format: input argument types for output format
  * Description:  produces output according to a format using _putchar.
- * Return: number of characters printed
+ * Return: number of characters printed or error number -1
  */
 int _printf(const char *format, ...)
 {
@@ -44,7 +44,7 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 
 	if (format == NULL)
-		return (255);
+		return (-1);
 	va_start(valist, format);
 	while (format[i])
 	{
@@ -63,7 +63,7 @@ int _printf(const char *format, ...)
 			continue;
 		}
 		if (!format[i + 1])
-			return (255);
+			return (-1);
 		_putchar(format[i]);
 		j++;
 		if (format[i + 1] == '%')

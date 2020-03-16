@@ -62,7 +62,7 @@ Print the int number -98 |   _printf("%i", -98);
 On success returns an integer number of symbols printed
 not counting \\0 for the string.
 
-On failure returns error number (255).
+On failure returns error number (-1).
 .SH NOTE
 This project follows the C coding style for Holberton School. (Betty)
 .SH SEE ALSO
