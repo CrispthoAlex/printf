@@ -1,0 +1,70 @@
+.TH man 3 "15 March 2020" "0.1" "_printf man page"
+.SH NAME
+.B _printf
+- format and print data
+.SH SYNOPSIS
+#include "holberton.h"
+
+int _printf(const char *format, ... );
+.SH DESCRIPTION
+.B Requirements
+
+library "holberton.h"	|	function _putchar
+
+.B Usage
+
+Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+.SH FORMAT
+       %c     print characters
+       %s     print strings
+       %d     print integers of max and min size of an int type
+       %i     print integers of max and min size of an int type
+.SH OPTION
+FORMAT controls the output as in C printf.  Interpreted sequences are:
+       %%     print single %
+.SH EXAMPLE
+
+.PP
+ #include "holberton.h"
+
+ int main()
+ {
+        int test;
+
+	test = 5
+        ret = _printf("%s\\n", "Holberton");
+        _printf("%d\\n", test);
+        return (0);
+ }
+
+
+ /**
+ * output
+ * Holberton
+ * 5
+ */
+.PP
+
+Print the string "Example"	|	_printf("%s", "Example");
+
+print the singular character 'e'	|	      _printf("%c", e);
+
+Print the decimal number 5   |		_printf("%d", 5);
+
+Print the int number -98 |   _printf("%i", -98);
+
+.SH RETURN VALUES
+On success returns an integer number of symbols printed
+not counting \\0 for the string.
+
+On failure returns error number (255).
+.SH NOTE
+This project follows the C coding style for Holberton School. (Betty)
+.SH SEE ALSO
+.I printf(3)
+.I write(2)
+.I Betty(1)
+.SH BUGS
+21 Savage - a lot ft. J. Cole
+.SH AUTHOR
+Crispthofer Rincon Murrain, Santiago Efraín Martínez León
