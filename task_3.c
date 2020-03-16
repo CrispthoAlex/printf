@@ -16,7 +16,7 @@ int print_b(va_list b)
 	 * k = end position of n value when formated into binary
 	 */
 	unsigned int n, m, i, k;
-	unsigned int a[32];/*strlen+2 (base 10*3 for each digit conversion)*/
+	unsigned int a[32];
 	int j;
 
 	n = va_arg(b, unsigned int);
