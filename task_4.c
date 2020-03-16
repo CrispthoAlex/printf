@@ -74,3 +74,88 @@ int print_o(va_list o)
 	}
 	return (j);
 }
+
+/**
+ * print_x - prints an unsigned integer in hexadecimal (base 16)
+ * @o: unsigned int to print
+ * Description: print in hexadecimal number up to the value of 268,435,456
+ * Return: number of digits printed (lower case)
+ */
+int print_x(va_list x)
+{
+	/* n = input number, m = max number,
+	 * i = iterator, j = print counter,
+	 * k = end position of n value when formated into hexadecimal
+	 * c = ascii character fix
+	 */
+	unsigned int a[8];
+	unsigned int i, m, n, k;
+	int j;
+	char c;
+
+	c = 'a' - ':';
+	n = va_arg(x, unsigned int);
+	m = 268435456;
+	a[0] = n / m;
+	for (i = 1; i < 8; i++)
+	{
+		m /= 16;
+		a[i] = (n / m) % 16;
+	}
+	for (i = 0, k = 0, j = 0; i < 8; i++)
+	{
+		k += a[i];
+		if (k || i == 7)
+		{
+			if (a[i] < 10)
+				_putchar('0' + a[i]);
+			else
+				_putchar('0' + c + a[i]);
+			j++;
+		}
+	}
+	return (j);
+}
+
+
+/**
+ * print_X - prints an unsigned integer in hexadecimal (base 16)
+ * @o: unsigned int to print
+ * Description: print in hexadecimal number up to the value of 268,435,456
+ * Return: number of digits printed (uppercase)
+ */
+int print_X(va_list X)
+{
+	/* n = input number, m = max number,
+	 * i = iterator, j = print counter,
+	 * k = end position of n value when formated into hexadecimal
+	 * c = ascii character fix
+	 */
+	unsigned int a[8];
+	unsigned int i, m, n, k;
+	int j;
+	char c;
+
+	c = 'A' - ':';
+	n = va_arg(x, unsigned int);
+	m = 268435456;
+	a[0] = n / m;
+	for (i = 1; i < 8; i++)
+	{
+		m /= 16;
+		a[i] = (n / m) % 16;
+	}
+	for (i = 0, k = 0, j = 0; i < 8; i++)
+	{
+		k += a[i];
+		if (k || i == 7)
+		{
+			if (a[i] < 10)
+				_putchar('0' + a[i]);
+			else
+				_putchar('0' + c + a[i]);
+			j++;
+		}
+	}
+	return (j);
+}

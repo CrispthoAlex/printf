@@ -22,6 +22,8 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
        %b     print unsigned integer as binary (base 2)
        %u     print unsigned integer
        %o     print unsigned integer as octal (base 8)
+       %x     print unsigned integer as hexadecimal (base 16) lower case
+       %X     print unsigned integer as hexadecimal (base 16) upper case
 .SH OPTION
 FORMAT controls the output as in C printf.  Interpreted sequences are:
        %%     print single %

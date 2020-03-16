@@ -30,6 +30,8 @@ Table 1. Specifier
 | b | unsigned decimal integer in binary |
 | u | unsigned decimal integer |
 | o | unsigned decimal integer in octal|
+| x | unsigned decimal integer in hexadecimal lower case|
+| X | unsigned decimal integer in hexadecimal upper case|
 | %  | Character  |
 
 Table 2. Flags
