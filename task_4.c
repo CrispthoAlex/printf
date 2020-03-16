@@ -137,7 +137,7 @@ int print_X(va_list X)
 	char c;
 
 	c = 'A' - ':';
-	n = va_arg(x, unsigned int);
+	n = va_arg(X, unsigned int);
 	m = 268435456;
 	a[0] = n / m;
 	for (i = 1; i < 8; i++)
