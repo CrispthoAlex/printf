@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "holberton.h"
-
+#include <stdarg.h>
 /**
  * verify_type - search list of types for a matching format
  * @format: string of formats from input
