@@ -13,7 +13,7 @@ Its prototype was defined following:
 	int _printf(const char *format, ...);
 ``
 
-Where [**format**](http://www.cplusplus.com/forum/beginner/148436/) contains a string that will be print. This strings is composed by n arguments that will be replace by n tags definied inside the string. 
+Where [**format**](http://www.cplusplus.com/forum/beginner/148436/) contains a string that will be print. This strings is composed by n arguments that will be replace by n tags definied inside the string.
 
 Following, the variadic function format tags prototype is:
 
