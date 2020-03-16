@@ -19,6 +19,9 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
        %s     print strings
        %d     print integers of max and min size of an int type
        %i     print integers of max and min size of an int type
+       %b     print unsigned integer as binary (base 2)
+       %u     print unsigned integer
+       %o     print unsigned integer as octal (base 8)
 .SH OPTION
 FORMAT controls the output as in C printf.  Interpreted sequences are:
        %%     print single %

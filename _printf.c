@@ -17,6 +17,8 @@ static int (*verify_type(const char *format))(va_list)
 		{"i", print_i},
 		{"d", print_d},
 		{"b", print_b},
+		{"u", print_u},
+		{"o", print_o},
 		{NULL, NULL}
 	};
 

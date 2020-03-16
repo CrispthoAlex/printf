@@ -27,6 +27,9 @@ Table 1. Specifier
 | c  | Character  |
 | d or i | Signed decimal integer |
 | s  | String of characters  |
+| b | unsigned decimal integer in binary |
+| u | unsigned decimal integer |
+| o | unsigned decimal integer in octal|
 | %  | Character  |
 
 Table 2. Flags
