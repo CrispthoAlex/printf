@@ -27,6 +27,11 @@ FORMAT controls the output as in C printf.  Interpreted sequences are:
 .PP
  #include "holberton.h"
 
+/*
+* main - test _printf
+*
+* Return: 0
+*/
  int main()
  {
         int test;
