@@ -28,8 +28,8 @@ int print_s(va_list s)
 	char *str = va_arg(s, char *);
 
 	if (str == NULL)
-		str = "(null)";
-	for (j = 0; str[j] != '\0'; j++)
+		return (write(1, "(null)", 6));
+	for (j = 0; str[j]; j++)
 	{
 		_putchar(str[j]);
 	}
