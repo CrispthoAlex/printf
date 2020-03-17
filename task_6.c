@@ -30,10 +30,9 @@ static unsigned long power(unsigned int x, unsigned int y)
  */
 int print_p(va_list p)
 {
-	/* n = input number, m = max number, i = iterator, j = print counter */
 	unsigned int a[16];
 	unsigned int i, k; /* k = end position of n value when hex display*/
-	unsigned long m, n = va_arg(p, unsigned long);
+	unsigned long m, n; /* n = input number, m = max number, i = iterator*/
 	int j = 0; /* print counter */
 	char c = 'a' - ':'; /* ascii character fix */
 	char *s = "(nil)"; /* adress string */
@@ -51,6 +50,7 @@ int print_p(va_list p)
 	_putchar('x');
 	j = 2;
 	m = power(16, 15);
+	n = va_arg(p, unsigned long)
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{
