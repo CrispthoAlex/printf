@@ -37,6 +37,7 @@ int print_p(va_list p)
 	char c = 'a' - ':'; /* ascii character fix */
 	char *s = "(nil)"; /* adress string */
 
+	n = va_arg(p, unsigned long);
 	if (n == 0)
 	{
 		for (i = 0; s[i]; i++)
@@ -50,14 +51,13 @@ int print_p(va_list p)
 	_putchar('x');
 	j = 2;
 	m = power(16, 15);
-	n = va_arg(p, unsigned long);
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{
 		m /= 16;
 		a[i] = (n / m) % 16;
 	}
-	for (i = 0, k = 0, j = 0; i < 16; i++)
+	for (i = 0, k = 0; i < 16; i++)
 	{
 		k += a[i];
 		if (k || i == 15)
