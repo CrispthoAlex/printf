@@ -50,7 +50,7 @@ int print_p(va_list p)
 	_putchar('x');
 	j = 2;
 	m = power(16, 15);
-	n = va_arg(p, unsigned long)
+	n = va_arg(p, unsigned long);
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
 	{
