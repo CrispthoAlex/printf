@@ -1,5 +1,7 @@
-![](https://web.zonamerica.com/html/img//home/colombia/popup_holberton.jpg)
+![](https://assets.holbertonschool.com/school_event_types/photos/000/000/011/regular/IMG_3198.jpg?1574094855)
 
+![](https://rails-assets.holbertonschool.com/assets/logos/holberton-school-logo_tablet-1-04810483bf8b1cf6eb253405d5b35dbed5fd303a896eba7f9b2d53c7d4690fe5.png)
+________________________________________________________________________________
 # printf Project
 *March / 2020*
 __________________________________________________
@@ -73,7 +75,6 @@ Header file. Include all prototypes functions used
 
 ------------
 ### Task files
-### Task files                                                                                                           
 
 * task_0.c
 
