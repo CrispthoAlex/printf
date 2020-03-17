@@ -21,6 +21,7 @@ static int (*verify_type(const char *format))(va_list)
 		{"o", print_o},
 		{"x", print_x},
 		{"X", print_X},
+		{"p", print_p},
 		{NULL, NULL}
 	};
 
