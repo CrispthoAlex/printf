@@ -45,17 +45,17 @@ Table 2. Flags
 ## Examples
 
 1. Printing the string "Example":
-   + Use: `_printf("%s", "Example");`
-   + Output: `Holberton.`
++ Use: `_printf("%s", "Example");`
++ Output: `Holberton.`
 
-2. print the singular character 'e'	|
+2. print the singular character 'e':
 + Use: `_printf("%c", e);`
 + Output: `e`
-3. Print the decimal number 5	|
+3. Print the decimal number 5:
 + Use: `_printf("%d", 5);`
 + Output: `5`
 
-4. Print the int number -98	|
+4. Print the int number -98:
 + Use: `_printf("%i", -98);`
 + Output: `-98`
 
@@ -72,6 +72,34 @@ Our printf function the Performs formatted Output Conversion And Print Data.
 Header file. Include all prototypes functions used
 
 ------------
+### Task files
+### Task files                                                                                                           
+
+* task_0.c
+
+`int print_c(va_list c)` /* prints a char */
+
+`int print_s(va_list s)` /* prints a string */
+
+* task_1.c
+
+`int print_i(va_list i)` /* prints an integer */
+
+`int print_d(va_list d)` /* prints a decimal */
+
+* task_3.c
+
+`int print_b(va_list b)` /* prints an unsigned integer in binary (base 2) */
+
+* task_4.c
+
+`int print_u(va_list u);` /* prints an unsigned integer */
+
+`int print_o(va_list o);` /* prints an unsigned integer in octal (base 8) */
+
+`int print_x(va_list x);` /* prints an unsigned integer in hexadecimal (base 16) */
+
+`int print_X(va_list X);` /* prints an unsigned integer in hexadecimal (base 16) */
 
 ### Return values
 
