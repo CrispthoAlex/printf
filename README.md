@@ -39,12 +39,6 @@ Following, the variadic function format tags prototype is:
 | R | string in rot13 |
 | %  | Character |
 
-
-| Flags | Description | Specifiers |
-| ------------- | ------------- | ------------- |
-| +  | Prints a plus sign (+) when the argument is a positive number. Else, prints a minus sign (-). | i, d |
-| (space) | Prints a blank space if the argument is a positive number | i, d |
-
 ------------
 
 ## Examples
