@@ -113,15 +113,15 @@ Header file. Include all prototypes functions used
 
 * task_7.c
 
-`int print_S(va_list S)` /* prints a string with Non printable characters (ASCII code value hexadecimal) */
+`int print_S(va_list S);` /* prints a string with Non printable characters (ASCII code value hexadecimal) */
 
 * task_14.c
 
-`print_r(va_list r)` /* prints a reverse string */
+`print_r(va_list r);` /* prints a reverse string */
 
 * task_15.c
 
-`int print_R(va_list R)` /* prints a string in rot13 */
+`int print_R(va_list R);` /* prints a string in rot13 */
 
 ### Return values
 
@@ -130,6 +130,12 @@ On success returns an integer number of symbols printed not counting \\0 for the
 On failure returns error number (-1)
 
 ------------
+## Flowchart
+
+* [_printf](https://drive.google.com/file/d/18urUCRs0wF_hn4KMm4oob39qXFOyzZQd/view?usp=sharing)
+
+* [verify_type](https://drive.google.com/file/d/1UkRRm2s3xmWcHA2c_0XRnQyJkw51hVUD/view?usp=sharing)
+
 ## Team Project
 
 It's a collaboration between Crispthofer Rincon & Santiago Martinez, students (from cohort 11 - january 2020) of Software Engineering at [Holberton School](https://www.holbertonschool.com/)
