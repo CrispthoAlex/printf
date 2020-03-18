@@ -109,6 +109,10 @@ Header file. Include all prototypes functions used
 
 `int print_p(va_list p);` /* prints a hexadecimal address (0x base 16) */
 
+* task_14.c
+
+`print_r(va_list r)` /* prints a reverse string */
+
 ### Return values
 
 On success returns an integer number of symbols printed not counting \\0 for the string.
