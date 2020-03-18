@@ -11,10 +11,10 @@
  */
 int print_b(va_list b)
 {
-	/* n = input number, m = max number,
-	 * i = iterator, j = print counter,
-	 * k = end position of n value when formated into binary
-	 */
+/* n = input number, m = max number,*/
+/* i = iterator, j = print counter,*/
+/* k = end position of n value when formated into binary*/
+
 	unsigned int n, m, i, k;
 	unsigned int a[32];
 	int j;

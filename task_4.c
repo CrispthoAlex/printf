@@ -11,10 +11,10 @@
  */
 int print_u(va_list u)
 {
-	/* n = input number, m = max number,
-	 * i = iterator, j = print counter,
-	 * k = end position of n value when formated into decimal
-	 */
+/* n = input number, m = max number,*/
+/* i = iterator, j = print counter,*/
+/* k = end position of n value when formated into decimal*/
+
 	unsigned int a[10];
 	unsigned int i, m, n, k;
 	int j;
@@ -47,10 +47,9 @@ int print_u(va_list u)
  */
 int print_o(va_list o)
 {
-	/* n = input number, m = max number,
-	 * i = iterator, j = print counter,
-	 * k = end position of n value when formated into octal
-	 */
+/* n = input number, m = max number,*/
+/* i = iterator, j = print counter,*/
+/* k = end position of n value when formated into octal*/
 	unsigned int a[11];
 	unsigned int i, m, n, k;
 	int j;
@@ -77,17 +76,16 @@ int print_o(va_list o)
 
 /**
  * print_x - prints an unsigned integer in hexadecimal (base 16)
- * @o: unsigned int to print
+ * @x: unsigned int to print
  * Description: print in hexadecimal number up to the value of 268,435,456
  * Return: number of digits printed (lower case)
  */
 int print_x(va_list x)
 {
-	/* n = input number, m = max number,
-	 * i = iterator, j = print counter,
-	 * k = end position of n value when formated into hexadecimal
-	 * c = ascii character fix
-	 */
+/* n = input number, m = max number,*/
+/* i = iterator, j = print counter,*/
+/* k = end position of n value when formated into hexadecimal*/
+/* c = ascii character fix */
 	unsigned int a[8];
 	unsigned int i, m, n, k;
 	int j;
@@ -120,17 +118,16 @@ int print_x(va_list x)
 
 /**
  * print_X - prints an unsigned integer in hexadecimal (base 16)
- * @o: unsigned int to print
+ * @X: unsigned int to print
  * Description: print in hexadecimal number up to the value of 268,435,456
  * Return: number of digits printed (uppercase)
  */
 int print_X(va_list X)
 {
-	/* n = input number, m = max number,
-	 * i = iterator, j = print counter,
-	 * k = end position of n value when formated into hexadecimal
-	 * c = ascii character fix
-	 */
+/* n = input number, m = max number,*/
+/* i = iterator, j = print counter,*/
+/* k = end position of n value when formated into hexadecimal*/
+/* c = ascii character fix */
 	unsigned int a[8];
 	unsigned int i, m, n, k;
 	int j;
