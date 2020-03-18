@@ -35,6 +35,7 @@ Following, the variadic function format tags prototype is:
 | X | unsigned decimal integer in hexadecimal upper case |
 | p | address as hexadecimal (base 16) lower case |
 | r | reversed string |
+| R | string in rot13 |
 | %  | Character |
 
 
@@ -112,6 +113,10 @@ Header file. Include all prototypes functions used
 * task_14.c
 
 `print_r(va_list r)` /* prints a reverse string */
+
+* task_15.c
+
+`int print_R(va_list R)` /* prints a string in rot13 */
 
 ### Return values
 

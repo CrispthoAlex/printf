@@ -26,6 +26,7 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
        %X     print unsigned integer as hexadecimal (base 16) upper case
        %p     print address as hexadecimal (base 16) lower case
        %r     print reversed string
+       %R     print a string in rot13
 
 .SH OPTION
 FORMAT controls the output as in C printf.  Interpreted sequences are:
