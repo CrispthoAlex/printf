@@ -106,6 +106,7 @@ Header file. Include all prototypes functions used
 * task_6.c
 
 `static unsigned long power(unsigned int x, unsigned int y)` /* calculates an exponent */
+
 `int print_p(va_list p);` /* prints a hexadecimal address (0x base 16) */
 
 ### Return values
