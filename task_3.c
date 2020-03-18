@@ -11,13 +11,9 @@
  */
 int print_b(va_list b)
 {
-/* n = input number, m = max number,*/
-/* i = iterator, j = print counter,*/
-/* k = end position of n value when formated into binary*/
-
-	unsigned int n, m, i, k;
-	unsigned int a[32];
-	int j;
+	unsigned int n, m, i, k; /* n = input number, m = max number,*/
+	unsigned int a[32]; /* i = iterator, j = print counter,*/
+	int j; /* k = end position of n value when formated into binary*/
 
 	n = va_arg(b, unsigned int);
 	m = 2147483648;

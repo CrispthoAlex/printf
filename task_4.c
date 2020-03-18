@@ -11,13 +11,9 @@
  */
 int print_u(va_list u)
 {
-/* n = input number, m = max number,*/
-/* i = iterator, j = print counter,*/
-/* k = end position of n value when formated into decimal*/
-
-	unsigned int a[10];
-	unsigned int i, m, n, k;
-	int j;
+	unsigned int a[10]; /* n = input number, m = max number,*/
+	unsigned int i, m, n, k; /* k = end position of n value in decimal*/
+	int j; /* i = iterator, j = print counter,*/
 
 	n = va_arg(u, unsigned int);
 	m = 1000000000;
@@ -47,12 +43,9 @@ int print_u(va_list u)
  */
 int print_o(va_list o)
 {
-/* n = input number, m = max number,*/
-/* i = iterator, j = print counter,*/
-/* k = end position of n value when formated into octal*/
-	unsigned int a[11];
-	unsigned int i, m, n, k;
-	int j;
+	unsigned int a[11]; /* n = input number, m = max number,*/
+	unsigned int i, m, n, k; /* k = end position of n value into octal*/
+	int j; /* i = iterator, j = print counter,*/
 
 	n = va_arg(o, unsigned int);
 	m = 1073741824;
@@ -82,14 +75,10 @@ int print_o(va_list o)
  */
 int print_x(va_list x)
 {
-/* n = input number, m = max number,*/
-/* i = iterator, j = print counter,*/
-/* k = end position of n value when formated into hexadecimal*/
-/* c = ascii character fix */
-	unsigned int a[8];
-	unsigned int i, m, n, k;
-	int j;
-	char c;
+	unsigned int a[8]; /* n = input number, m = max number,*/
+	unsigned int i, m, n, k; /* c = ascii character fix */
+	int j; /* i = iterator, j = print counter,*/
+	char c; /* k = end position of n value when formated into hexadecimal*/
 
 	c = 'a' - ':';
 	n = va_arg(x, unsigned int);
@@ -124,14 +113,10 @@ int print_x(va_list x)
  */
 int print_X(va_list X)
 {
-/* n = input number, m = max number,*/
-/* i = iterator, j = print counter,*/
-/* k = end position of n value when formated into hexadecimal*/
-/* c = ascii character fix */
-	unsigned int a[8];
-	unsigned int i, m, n, k;
-	int j;
-	char c;
+	unsigned int a[8]; /* n = input number, m = max number,*/
+	unsigned int i, m, n, k; /* i = iterator, j = print counter,*/
+	int j; /* c = ascii character fix */
+	char c; /* k = end position of n value when formated into hexadecimal*/
 
 	c = 'A' - ':';
 	n = va_arg(X, unsigned int);
