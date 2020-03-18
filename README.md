@@ -34,6 +34,7 @@ Following, the variadic function format tags prototype is:
 | x | unsigned decimal integer in hexadecimal lower case |
 | X | unsigned decimal integer in hexadecimal upper case |
 | p | address as hexadecimal (base 16) lower case |
+| S | String including Non printable characters |
 | r | reversed string |
 | R | string in rot13 |
 | %  | Character |
@@ -109,6 +110,10 @@ Header file. Include all prototypes functions used
 `static unsigned long power(unsigned int x, unsigned int y)` /* calculates an exponent */
 
 `int print_p(va_list p);` /* prints a hexadecimal address (0x base 16) */
+
+* task_7.c
+
+`int print_S(va_list S)` /* prints a string with Non printable characters (ASCII code value hexadecimal) */
 
 * task_14.c
 

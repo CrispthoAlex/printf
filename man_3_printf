@@ -25,6 +25,7 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
        %x     print unsigned integer as hexadecimal (base 16) lower case
        %X     print unsigned integer as hexadecimal (base 16) upper case
        %p     print address as hexadecimal (base 16) lower case
+       %S     print strings including Non printable characters (ASCII code value hexadecimal)
        %r     print reversed string
        %R     print a string in rot13
 
@@ -53,19 +54,19 @@ FORMAT controls the output as in C printf.  Interpreted sequences are:
 
 
  /**
- * output
+ * Output
  * Holberton
  * 5
  */
 .PP
 
-Print the string "Example"	|	_printf("%s", "Example");
+Print the string "Example"		|	_printf("%s", "Example");
 
-print the singular character 'e'	|	      _printf("%c", e);
+print the singular character 'e'	|	_printf("%c", e);
 
-Print the decimal number 5   |		_printf("%d", 5);
+Print the decimal number 5   		|	_printf("%d", 5);
 
-Print the int number -98 |   _printf("%i", -98);
+Print the int number -98 		|	_printf("%i", -98);
 
 .SH RETURN VALUES
 On success returns an integer number of symbols printed
