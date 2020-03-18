@@ -25,6 +25,8 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
        %x     print unsigned integer as hexadecimal (base 16) lower case
        %X     print unsigned integer as hexadecimal (base 16) upper case
        %p     print address as hexadecimal (base 16) lower case
+       %r     print reversed string
+
 .SH OPTION
 FORMAT controls the output as in C printf.  Interpreted sequences are:
        %%     print single %
