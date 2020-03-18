@@ -23,20 +23,21 @@ Following, the variadic function format tags prototype is:
 
 *Return value* is the amount of chars printed (program successfully), see this tables:
 
-Table 1. Specifier
 | Specifier | Output |
 | ------------- | ------------- |
-| c  | Character  |
+| c | Character  |
 | d or i | Signed decimal integer |
-| s  | String of characters  |
+| s | String of characters |
 | b | unsigned decimal integer in binary |
 | u | unsigned decimal integer |
-| o | unsigned decimal integer in octal|
-| x | unsigned decimal integer in hexadecimal lower case|
-| X | unsigned decimal integer in hexadecimal upper case|
-| %  | Character  |
+| o | unsigned decimal integer in octal |
+| x | unsigned decimal integer in hexadecimal lower case |
+| X | unsigned decimal integer in hexadecimal upper case |
+| p | address as hexadecimal (base 16) lower case |
+| r | reversed string |
+| %  | Character |
 
-Table 2. Flags
+
 | Flags | Description | Specifiers |
 | ------------- | ------------- | ------------- |
 | +  | Prints a plus sign (+) when the argument is a positive number. Else, prints a minus sign (-). | i, d |
@@ -101,6 +102,11 @@ Header file. Include all prototypes functions used
 `int print_x(va_list x);` /* prints an unsigned integer in hexadecimal (base 16) */
 
 `int print_X(va_list X);` /* prints an unsigned integer in hexadecimal (base 16) */
+
+* task_6.c
+
+`static unsigned long power(unsigned int x, unsigned int y)` /* calculates an exponent */
+`int print_p(va_list p);` /* prints a hexadecimal address (0x base 16) */
 
 ### Return values
 
